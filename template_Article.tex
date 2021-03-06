@@ -1,18 +1,10 @@
-%-----PROVA Template
-%Adapted by: Milena Lima&Fernanda D.Gomes&Sara R. Pacheco
-%Autor:Hirschhorn,Philip(Using the exam document class)
-%Adaptations:
-%*Tradução da tabela de pontuação;
-%*Inclusão de "meios" em forma decimal nos valores pontuais %das questões;
-%*Inclusão de Referências e citações.
-%Science Project at school 2017-FAPEAM
-%View:https://www.overleaf.com/read/bmbsmqkxwndn
+%Template from a website I found, edited to be in Germanglisch
 %=========================================================
-%------------PROVA OBJETIVA/DISCURSIVA
+%------------GOD--LEFT--US
 %=========================================================
 \documentclass[12pt]{exam}
 %=========================================================
-%------------PACOTES
+%------------Clearence
 %=========================================================
 \usepackage[T1]{fontenc}%Codificação
 \usepackage[utf8]{inputenc}%Inclui palavras com acento
@@ -30,11 +22,11 @@
 \usepackage{epstopdf} %converte figs eps em figs pdf
 \usepackage{booktabs}%tabelas
 \usepackage{pdfpages}%Permite incluir arquivos pdf
-\usepackage[sort&compress,square,comma, authoryear]{natbib}%Referencias
-\usepackage[colorlinks=true,urlcolor=magenta,citecolor=red,linkcolor=blue,bookmarks=true]{hyperref}%Links e citações
-\usepackage{enumerate}%enumeracao
-\usepackage{enumitem}%enumeracao
-%---Definição de Itens e Subitens---
+\usepackage[sort&compress,square,comma, authoryear]{natbib}%Reference
+\usepackage[colorlinks=true,urlcolor=magenta,citecolor=red,linkcolor=blue,bookmarks=true]{hyperref}%Links
+\usepackage{enumerate}
+\usepackage{enumitem}
+%---Subitems---
 \newlist{partes}{enumerate}{3}
 \setlist[partes]{label=(\alph*)}
 \newcommand{\parte}{\item}
@@ -54,19 +46,19 @@
 \hsword{Erhalten:}
 \htword{\textcolor{blue}{Total}}
 %=========================================================
-%------------DIGITE AQUI
+%------------Header
 %=========================================================
 \newcommand{\orgao}{Discord Universität München}
 \newcommand{\escola}{Elektrotechnik und Informatik}
 \newcommand{\disciplina}{Schatungstheorie}
-\newcommand{\professor}{Ben Doverson}
+\newcommand{\professor}{Mike Ock}
 \newcommand{\data}{\today}
 \newcommand{\prova}{1. Prüfung GOP}
 \newcommand{\tempo}{15 Minuten}
 \newcommand{\aluno}{\bf Name:}
 \newcommand{\nota}{NOTE:}
 %=========================================================
-%------------Cabeçalho da Segunda 
+%-----------Weird stuff
 %=========================================================
 \pagestyle{headandfoot}%{head}%empty
 \firstpageheader{}{}{}
@@ -79,33 +71,33 @@
 \begin{document}
 	\fontsize{14}{14}\selectfont
 	%========================================================
-	%-------------------Cabeçalho da Primeira Página
+	%-------------------Main Page
 	%========================================================
 	\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}}l @{\extracolsep{6pt}}l}
-		%--------------------Orgão e Turma
+
 		\textbf{\orgao} & \textbf{Note:} & {\answerbox}\\
-		%--------------------Escola/Departamento e Data
+
 		\textbf{\escola} &\textbf{Fach:}&\textbf{\disciplina}\\
-		%-------------------Disciplina e Professor
+		%-------------------Discipline and Proffesor Name
 		\textbf{Professor: \professor}  & {\bf Matr Num.}:&\textbf{\hrulefill}\\[8pt]
 		%-------------------
 		%\Large{\aluno\textbf{\hrulefill}}& {\bf Turma}:&\textbf{\hrulefill}
 		\multicolumn{3}{l}{\Large{\aluno \textbf{\hrulefill}}}\\
 	\end{tabular*}
-	%--------------------LINHA CENTRAL
+	%--------------------CENTRAL LINE
 	\begin{center}
 		\rule[1ex]{\textwidth}{1pt}
 		{\LARGE{\prova}}\\
-		Duration: \tempo \hspace{9cm}Datum:\hspace{1cm}/\hspace{1cm}/\hspace{1cm}\\
+		Dauer: \tempo \hspace{9cm}Datum:\hspace{1cm}/\hspace{1cm}/\hspace{1cm}\\
 		\rule[2ex]{\textwidth}{1pt}
 	\end{center}
 	%=========================================================
-	%-------------------RECOMENDAÇÕES
+	%-------------------Reference(S)
 	%=========================================================
 	\noindent
-	Diese klasur erhaltet \numpages\ seite(n), instgesamt \numquestions\ Aufgaben, insgesamt \numpoints\ punkte.
+	Diese klasur erfasst \numpages\ seite(n), instgesamt \numquestions\ Aufgaben, insgesamt \numpoints\ punkte.
 	%=========================================================
-	%-------------------Tabela de Pontuação
+	%-------------------Point Table
 	%=========================================================
 	\begin{center}
 		\textbf{Tabelle (NUR VON PRÜFER ZU ERFÜLLEN)}\\
@@ -115,10 +107,10 @@
 	
 	\noindent
 	\rule[1ex]{\textwidth}{1pt}
-	%--------------------Linha Após a Tabela
+	%--------------------something related to table
 	\begin{questions}
 		%=========================================================
-		%-------------------QUESTÕES DA PROVA
+		%-------------------Questions
 		%=========================================================
 		\question[\half]Aufgabe 1: Geben sie eine Ersatzschaltbild fur Tesla Roadster Motor, nur aus Zweitoren bestehnd. (Gegebene Platz ist genügend.)
 \makeemptybox{2in}
@@ -177,11 +169,11 @@
 		
 		
 		%=========================================================
-		%-------------------FIM DA PROVA
+		%-------------------End of Document EOF
 		%=========================================================
 	\end{questions}
 	%===========================================================
-	%          BIBLIOGRAFIA
+	%          BIBLIOGRAPHY
 	%===========================================================
 
 \end{document}
